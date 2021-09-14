@@ -1,0 +1,102 @@
+.Assignment {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.DataTable {
+  margin-top: 10px 0;
+}
+
+.Columns {
+  display: flex;
+  margin-right: 14px;
+  min-height: 36px;
+}
+
+.Column {
+  flex: 1;
+  text-align: right;
+}
+
+.Column:first-child {
+  text-align: left;
+  font-weight: bold;
+}
+
+.Header {
+  padding: 6px 10px;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: transparent;
+  color: #777;
+}
+
+.Cell {
+  padding: 12px 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 0;
+  flex: 1;
+}
+
+.Cell:first-of-type {
+  justify-content: flex-start;
+}
+
+.Rows {
+  border: 1px solid #888;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px;
+}
+
+.Row {
+  display: flex;
+  font-size: 14px;
+  color: #5fcff1;
+}
+
+.HeaderRow {
+  cursor: default !important;
+  border-bottom: 1px solid #888;
+}
+
+.HeaderRow:hover {
+  background-color: #fff !important;
+}
+
+.NoDataContainer {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #a3bac6;
+}
+
+.MaximizeRows {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 82px;
+  z-index: 0;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  cursor: pointer;
+}
