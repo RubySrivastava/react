@@ -1,11 +1,10 @@
 import React from 'react'
 
-export const Header = () => {
+export const Cart = () => {
     return (
         <div>
-            Header
+           Cart 
         </div>
     )
 }
-
-export default Header;
+export default Cart;
